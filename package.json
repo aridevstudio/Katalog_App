@@ -1,0 +1,13 @@
+{
+  "name": "katalogwa-monorepo",
+  "version": "1.0.0",
+  "description": "KatalogWA - Local Business Product Catalog & WhatsApp Ordering System (React + Node.js)",
+  "scripts": {
+    "server": "node server/src/index.js",
+    "client": "npm --prefix client run dev",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": ["whatsapp", "catalog", "umkm", "react", "express", "nodejs"],
+  "author": "",
+  "license": "ISC"
+}
