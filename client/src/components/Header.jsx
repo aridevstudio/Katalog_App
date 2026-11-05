@@ -1,5 +1,7 @@
 import React from 'react';
-import { ShoppingBag, Lock, LogOut, LayoutDashboard, Store, ExternalLink } from 'lucide-react';
+import { Lock, LogOut, LayoutDashboard, Store } from 'lucide-react';
+
+import Logo from '../assets/LogoMieGacoan.png';
 
 export const Header = ({
   storeSettings,
@@ -14,16 +16,16 @@ export const Header = ({
       <div className="container header-container">
         {/* Brand / Logo */}
         <div className="brand-group" onClick={() => setIsAdminView(false)} style={{ cursor: 'pointer' }}>
-          <div className="brand-icon">
-            <ShoppingBag size={24} color="#ffffff" />
-          </div>
+         <div className="logo-brand">
+          <img src={Logo} width={50} height={50} alt="Logo Mie Gacoan" />
+         </div>
           <div className="brand-info">
             <div className="brand-title-wrap">
-              <span className="brand-name">KatalogWA</span>
+              <span className="brand-name">MIE GACOAN</span>
               <span className="brand-tag">Pesan via WhatsApp</span>
             </div>
             <p className="store-subtext">
-              {storeSettings?.storeName || 'Toko Berkah Nusantara'} • <span className="text-emerald">{storeSettings?.tagline || 'Kuliner Lezat & Segar'}</span>
+              {storeSettings?.storeName || 'Toko MIE GACOAN INDONESIA'} • <span className="text-blue text-bold">{storeSettings?.tagline || 'Kuliner Lezat & Segar'}</span>
             </p>
           </div>
         </div>
